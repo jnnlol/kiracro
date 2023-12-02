@@ -17,7 +17,7 @@ mouse = Controller()
 
 print(Fore.YELLOW+"Coded by JNN")
 
-title = Fore.RED + pyfiglet.figlet_format("kiracro") + Fore.LIGHTMAGENTA_EX + "Made by JNN and edi\n" + Fore.CYAN + "Need support \ OR / Want TO support? " + Fore.RED + "Join the discord!: https://discord.gg/dsaJRn9wnr" + Fore.RESET
+title = Fore.RED + pyfiglet.figlet_format("kiracro") + Fore.LIGHTMAGENTA_EX + "Coded by JNN and made by edi\n" + Fore.CYAN + "Need support \ OR / Want TO support? " + Fore.RED + "Join the discord!: https://discord.gg/dsaJRn9wnr" + Fore.RESET
 
 
 keytostart = input("What would you like the key to start the macro to be?: ").lower()
@@ -62,7 +62,7 @@ def run_macro():
     keyboard_controller.release('o')
 
 def main():
-    print(f"Press {start_stop_key} to START/STOP JNNMACRO.")
+    print(f"Press {start_stop_key} to START/STOP KIRACRO.")
     print(title)
 
     with keyboard.Listener(on_press=on_press) as listener:

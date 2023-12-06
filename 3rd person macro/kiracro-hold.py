@@ -3,21 +3,15 @@ from colorama import Fore
 import time
 import pyfiglet
 import os
-from pynput.mouse import Controller
 from pynput import keyboard
-
-mouse = Controller()
 
 colorama.init()
 keyboard_controller = keyboard.Controller()
-mouse = Controller()
 
 title = Fore.RED + pyfiglet.figlet_format("kiracro") + Fore.LIGHTMAGENTA_EX + "Coded by JNN and made by edi\n" + Fore.CYAN + "Need support \ OR / Want TO support? " + Fore.RED + "Join the discord!: https://discord.gg/dsaJRn9wnr" + Fore.RESET
-
 key_to_hold = input(Fore.YELLOW + "What would you like the key to hold to enable the macro?: ").lower()
 
 holding_key = False
-
 
 def on_press(key):
     global holding_key
@@ -28,7 +22,6 @@ def on_press(key):
     except AttributeError:
         pass
 
-
 def on_release(key):
     global holding_key
     try:
@@ -37,7 +30,6 @@ def on_release(key):
             print_status()
     except AttributeError:
         pass
-
 
 def print_status():
     os.system("cls")
@@ -49,7 +41,6 @@ def print_status():
     else:
         print(Fore.RED + "KIRACO STOPPED" + Fore.RESET)
 
-
 def run_macro():
     keyboard_controller.press('i')
     time.sleep(0.01)
@@ -59,7 +50,6 @@ def run_macro():
     time.sleep(0.01)
     keyboard_controller.release('o')
 
-
 def main():
     print_status()
 
@@ -68,7 +58,6 @@ def main():
             if holding_key:
                 run_macro()
             time.sleep(0.01)
-
 
 if __name__ == "__main__":
     main()

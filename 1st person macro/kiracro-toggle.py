@@ -16,8 +16,15 @@ mouse = Controller()
 # kbc=kb.c()
 # call kb_c for in-game movements
 
-title = Fore.RED + pyfiglet.figlet_format("kiracro") + Fore.LIGHTMAGENTA_EX + "Coded by JNN and made by edi\n" + Fore.CYAN + "Need support \ OR / Want TO support? " + Fore.RED + "Join the discord!: https://discord.gg/dsaJRn9wnr" + Fore.RESET
-
+title = Fore.RED + """  _  _______ _____            _____ _____   ____  
+ | |/ /_   _|  __ \     /\   / ____|  __ \ / __ \ 
+ | ' /  | | | |__) |   /  \ | |    | |__) | |  | |
+ |  <   | | |  _  /   / /\ \| |    |  _  /| |  | |
+ | . \ _| |_| | \ \  / ____ \ |____| | \ \| |__| |
+ |_|\_\_____|_|  \_\/_/    \_\_____|_|  \_\\____/ 
+                                                  
+                                                  """ + Fore.LIGHTMAGENTA_EX + "Coded by JNN and sponsered edi\n" + Fore.CYAN + "Need support \ OR / Want TO support? " + Fore.RED + "Join the discord!: https://discord.gg/dsaJRn9wnr" + Fore.RESET
+os.system("cls")
 key_to_toggle = input(Fore.YELLOW+"What would you like the key to toggle the macro to be?: ").lower()
 
 toggle_enabled = False

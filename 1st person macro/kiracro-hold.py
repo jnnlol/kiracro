@@ -5,15 +5,26 @@ import pyfiglet
 import os
 from pynput.mouse import Controller
 from pynput import keyboard
-
+#THIS IS OPEN SOURCE ITS NOT A RAT CMON GUYS
 mouse = Controller()
 
 colorama.init()
 keyboard_controller = keyboard.Controller()
 mouse = Controller()
 
-title = Fore.RED + pyfiglet.figlet_format("kiracro") + Fore.LIGHTMAGENTA_EX + "Coded by JNN and made by edi\n" + Fore.CYAN + "Need support \ OR / Want TO support? " + Fore.RED + "Join the discord!: https://discord.gg/dsaJRn9wnr" + Fore.RESET
-key_to_hold = input(Fore.YELLOW + "What would you like the key to hold to enable the macro?: ").lower()
+title = Fore.RED + """  _  _______ _____            _____ _____   ____  
+ | |/ /_   _|  __ \     /\   / ____|  __ \ / __ \ 
+ | ' /  | | | |__) |   /  \ | |    | |__) | |  | |
+ |  <   | | |  _  /   / /\ \| |    |  _  /| |  | |
+ | . \ _| |_| | \ \  / ____ \ |____| | \ \| |__| |
+ |_|\_\_____|_|  \_\/_/    \_\_____|_|  \_\\____/ 
+                                                  
+                                                  """ + Fore.LIGHTMAGENTA_EX + "Coded by JNN and sponsered edi\n" + Fore.CYAN + "Need support \ OR / Want TO support? " + Fore.RED + "Join the discord!: https://discord.gg/dsaJRn9wnr" + Fore.RESET
+os.system("cls")
+print(Fore.GREEN+"EXE VERSION!!"+Fore.RESET)
+kst = input(Fore.YELLOW+"Enter your keybind to hold the macro: ").lower()
+
+key_to_hold = kst
 
 holding_key = False
 

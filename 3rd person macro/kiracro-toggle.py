@@ -21,9 +21,10 @@ title = Fore.RED + """  _  _______ _____            _____ _____   ____
  | . \ _| |_| | \ \  / ____ \ |____| | \ \| |__| |
  |_|\_\_____|_|  \_\/_/    \_\_____|_|  \_\\____/ 
                                                   
-                                                  """ + Fore.LIGHTMAGENTA_EX + "Coded by JNN and sponsered edi\n" + Fore.CYAN + "Need support \ OR / Want TO support? " + Fore.RED + "Join the discord!: https://discord.gg/dsaJRn9wnr" + Fore.RESET
+""" + Fore.LIGHTMAGENTA_EX + "Coded by JNN and edi\n" + Fore.CYAN + "Need support \ OR / Want TO support? " + Fore.RED + "Join the discord!: https://discord.gg/dsaJRn9wnr" + Fore.RESET
 
 os.system("cls")
+print(Fore.GREEN+"EXE VERSION!!"+Fore.RESET)
 keytostart = input("What would you like the key to start the macro to be?: ").lower()
 
 

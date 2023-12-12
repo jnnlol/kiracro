@@ -23,8 +23,9 @@ title = Fore.RED + """  _  _______ _____            _____ _____   ____
  | . \ _| |_| | \ \  / ____ \ |____| | \ \| |__| |
  |_|\_\_____|_|  \_\/_/    \_\_____|_|  \_\\____/ 
                                                   
-                                                  """ + Fore.LIGHTMAGENTA_EX + "Coded by JNN and sponsered edi\n" + Fore.CYAN + "Need support \ OR / Want TO support? " + Fore.RED + "Join the discord!: https://discord.gg/dsaJRn9wnr" + Fore.RESET
+""" + Fore.LIGHTMAGENTA_EX + "Coded by JNN and edi\n" + Fore.CYAN + "Need support \ OR / Want TO support? " + Fore.RED + "Join the discord!: https://discord.gg/dsaJRn9wnr" + Fore.RESET
 os.system("cls")
+print(Fore.GREEN+"EXE VERSION!!"+Fore.RESET)
 key_to_toggle = input(Fore.YELLOW+"What would you like the key to toggle the macro to be?: ").lower()
 
 toggle_enabled = False
@@ -46,9 +47,9 @@ def print_status():
     print(title)
     print("------------------------------------------")
     if toggle_enabled:
-        print(Fore.GREEN + "JNNMACRO STARTED" + Fore.RESET)
+        print(Fore.GREEN + "KIRACRO STARTED" + Fore.RESET)
     else:
-        print(Fore.RED + "JNNMACRO STOPPED" + Fore.RESET)
+        print(Fore.RED + "KIRACRO STOPPED" + Fore.RESET)
 
 
 def run_macro():
@@ -60,7 +61,7 @@ def run_macro():
 
 
 def main():
-    print(f"Press {key_to_toggle} to TOGGLE JNNMACRO.")
+    print(f"Press {key_to_toggle} to TOGGLE KIRACRO.")
     print(title)
 
     with keyboard.Listener(on_press=on_press) as listener:
